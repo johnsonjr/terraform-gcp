@@ -1,6 +1,6 @@
 terraform {
   backend "consul" {
-    address = "35.205.119.213:8500"
+    address = "35.205.119.213"
     path    = "remote_state/hsbc-terraform_state"
   }
 }
