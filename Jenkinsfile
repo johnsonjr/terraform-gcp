@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('terraform') {
       steps {
-        sh 'terrafrom init'
+        sh 'cd /home/johnsonawssa/terraform_scripts; terrafrom init'
         echo 'testing output'
       }
     }
