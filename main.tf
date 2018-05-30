@@ -37,7 +37,7 @@ resource "google_pubsub_topic" "dataflow-output-topic" {
 resource "google_pubsub_subscription" "myOutputSub1" {
   name  = "myOutputSub1"
   topic = "${google_pubsub_topic.dataflow-output-topic.name}"
-  ack_deadline_seconds = 10  
+  ack_deadline_seconds = 10 
 }
 
 
